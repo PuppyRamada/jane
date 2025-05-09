@@ -3,51 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Social Links</title>
+    <title>My Social Links & Blog</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="profile">
-            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
-            <h1>@YourUsername</h1>
-            <p class="bio">Digital creator | Content specialist | Sharing my journey</p>
+    <div class="main-container">
+        <!-- Left Side - Link Tree -->
+        <div class="link-tree">
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+                <h1>@YourUsername</h1>
+                <p class="bio">Digital creator | Content specialist | Sharing my journey</p>
+            </div>
+            
+            <div class="links">
+                <a href="https://youtube.com" class="link-button youtube">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                
+                <a href="https://instagram.com" class="link-button instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                
+                <a href="https://twitter.com" class="link-button twitter">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                
+                <a href="https://linkedin.com" class="link-button linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                
+                <a href="https://github.com" class="link-button github">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                
+                <a href="https://example.com" class="link-button website">
+                    <i class="fas fa-globe"></i> Personal Website
+                </a>
+                
+                <a href="mailto:you@example.com" class="link-button email">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+            </div>
         </div>
-        
-        <div class="links">
-            <a href="https://youtube.com/yourchannel" class="link-button youtube">
-                <i class="fab fa-youtube"></i> YouTube
-            </a>
+
+        <!-- Right Side - Blog Section -->
+        <div class="blog-section">
+            <h2 class="blog-title">My Latest Updates</h2>
             
-            <a href="https://instagram.com/yourhandle" class="link-button instagram">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
+            <div class="blog-post">
+                <div class="post-date">June 15, 2023</div>
+                <img src="blog1.jpg" alt="Blog image" class="post-image">
+                <h3>My Creative Process</h3>
+                <p>Sharing some insights about how I approach new projects and creative challenges in my work...</p>
+                <a href="#" class="read-more">Read more →</a>
+            </div>
             
-            <a href="https://twitter.com/yourhandle" class="link-button twitter">
-                <i class="fab fa-twitter"></i> Twitter
-            </a>
+            <div class="blog-post">
+                <div class="post-date">May 28, 2023</div>
+                <img src="blog2.jpg" alt="Blog image" class="post-image">
+                <h3>New Project Launch</h3>
+                <p>Excited to announce my latest collaboration with some amazing creators in the industry...</p>
+                <a href="#" class="read-more">Read more →</a>
+            </div>
             
-            <a href="https://linkedin.com/in/yourprofile" class="link-button linkedin">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            
-            <a href="https://github.com/yourusername" class="link-button github">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            
-            <a href="https://yourwebsite.com" class="link-button website">
-                <i class="fas fa-globe"></i> Personal Website
-            </a>
-            
-            <a href="mailto:youremail@example.com" class="link-button email">
-                <i class="fas fa-envelope"></i> Email Me
-            </a>
+            <div class="blog-post">
+                <div class="post-date">May 10, 2023</div>
+                <img src="blog3.jpg" alt="Blog image" class="post-image">
+                <h3>Behind the Scenes</h3>
+                <p>A quick look at my workspace setup and the tools I use every day to stay productive...</p>
+                <a href="#" class="read-more">Read more →</a>
+            </div>
         </div>
-        
-        <div class="footer">
-            <p>© 2023 Your Name. All rights reserved.</p>
-        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2023 Your Name. All rights reserved.</p>
     </div>
 </body>
 </html>
