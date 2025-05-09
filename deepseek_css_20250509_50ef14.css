@@ -1,0 +1,119 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Profile section */
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.bio {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Links section */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.link-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.link-button i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Platform-specific colors */
+.youtube { background-color: #FF0000; }
+.instagram { background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80); }
+.twitter { background-color: #1DA1F2; }
+.linkedin { background-color: #0077B5; }
+.github { background-color: #333; }
+.website { background-color: #4CAF50; }
+.email { background-color: #6A5ACD; }
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #999;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .bio {
+        font-size: 14px;
+    }
+    
+    .link-button {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+}
